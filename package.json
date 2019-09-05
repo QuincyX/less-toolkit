@@ -1,11 +1,22 @@
 {
-  "name": "less-toolkit",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@quincyx/less-toolkit",
+  "version": "0.0.1",
+  "description": "Quincy's less toolkit",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/QuincyX/less-toolkit.git"
+  },
+  "keywords": [
+    "less"
+  ],
   "author": "QuincyX <likequincy@outlook.com> (https://code4ever.cn/)",
+  "bugs": {
+    "url": "https://github.com/QuincyX/less-toolkit/issues"
+  },
+  "homepage": "https://github.com/QuincyX/less-toolkit#readme",
   "license": "MIT"
 }
