@@ -1,0 +1,60 @@
+.global-reset() {
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  body {
+    line-height: 1;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    vertical-align: middle;
+  }
+  caption,
+  th,
+  td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+  }
+  a,
+  a:active,
+  a:focus,
+  a:hover,
+  div:focus {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  input:disabled,
+  input[disabled],
+  textarea:disabled {
+    -webkit-opacity: 1;
+    -webkit-text-fill-color: inherit;
+    opacity: 1;
+  }
+  button,
+  input {
+    outline: 0;
+    line-height: normal;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: inherit;
+    font-family: inherit;
+  }
+}
