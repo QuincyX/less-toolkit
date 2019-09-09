@@ -1,6 +1,6 @@
 {
   "name": "@quincyx/less-toolkit",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Quincy's less toolkit",
   "main": "lib/index.js",
   "scripts": {
