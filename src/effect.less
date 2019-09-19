@@ -1,3 +1,17 @@
+.hoverScale(@scale:0.95) {
+  &:hover {
+    .scale(@scale);
+  }
+}
+
+.scale(@scale:0.9) {
+  transform: scale(@scale);
+}
+
+.trans(@time:0.3s) {
+  transition: all @time ease;
+}
+
 // 文字浮凸效果
 
 .embossed-text(@bg-color) {

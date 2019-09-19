@@ -8,11 +8,10 @@
 
 // 文字颜色
 
-@text-title: #303133;
-@text-primary: #606266;
-@text-grey: #909399;
-@text-disabled: #c0c4cc;
-@text: @text-primary;
+@textTitle: #303133;
+@textPrimary: #606266;
+@textGrey: #909399;
+@textDisabled: #c0c4cc;
 
 // 功能颜色
 
@@ -39,3 +38,20 @@
 @geekBlue: #2f54eb;
 @purple: #722ed1;
 @magenta: #eb2f96;
+
+.color(@color:@primary) {
+  color: @color;
+}
+.background(@color:@background) {
+  background: @color;
+}
+.hoverColor(@color:@primary) {
+  &:hover {
+    color: @color;
+  }
+}
+.hoverBackground(@color:@primary) {
+  &:hover {
+    background: @color;
+  }
+}

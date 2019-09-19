@@ -7,10 +7,14 @@
 .centerBox {
   margin: 0 auto;
 }
+.relative{
+  position: relative;
+}
 .flexCenter {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .flexCol {
   display: flex;
@@ -25,31 +29,34 @@
   left: 0;
   right: 0;
 }
-.fixedBottom(@height) {
+.fixedBottom(@height:auto) {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   height: @height;
 }
-.fixedTop(@height) {
+.fixedTop(@height:auto) {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: @height;
 }
-.fixedLeft(@width) {
+.fixedLeft(@width:auto) {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   width: @width;
 }
-.fixedRight(@width) {
+.fixedRight(@width:auto) {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   width: @width;
+}
+.rotate(@deg:10deg) {
+  transform: rotate(@deg);
 }

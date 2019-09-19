@@ -1,28 +1,21 @@
-# less-toolkit
-> Quincy's less 工具包
-
-## 使用方法
-
-### 安装
-```shell
-npm i @quincyx/less-toolkit -D
-```
-
-### 修改 vue.config.js
-
-```javascript
 const path = require('path')
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
-const qLessToolkit = require('@quincyx/less-toolkit')
+const qLessPlugin = require('@quincyx/less-toolkit')
 
 module.exports = {
+  publicPath: '/',
+  productionSourceMap: false,
+  devServer: {
+    host: '0.0.0.0',
+    open: false
+  },
   css: {
     loaderOptions: {
       less: {
         plugins: [
-          new qLessToolkit({
+          new qLessPlugin({
             extend: [
               resolve('./src/style/theme.less'),
               resolve('./src/style/mixin.less')
@@ -34,7 +27,3 @@ module.exports = {
     }
   }
 }
-```
-### 配置
-
-`extend`可添加自定义变量和mixin，将覆盖系统默认值

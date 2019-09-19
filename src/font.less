@@ -1,14 +1,21 @@
 @fontSizeSmall: 12px;
 @fontSizePrimary: 14px;
+@fontSizeMiddle: 16px;
 @fontSizeLarge: 18px;
 
 @fontSize: @fontSizePrimary;
+@fontFamily: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+
 
 .size(@size:@fontSize) {
   font-size: @size;
 }
 .sizeSmall {
   font-size: @fontSizeSmall;
+}
+.sizeMiddle {
+  font-size: @fontSizeMiddle;
 }
 .sizeLarge {
   font-size: @fontSizeLarge;
@@ -21,4 +28,17 @@
 }
 .bolder {
   font-weight: 900;
+}
+
+// 超长文本显示省略号
+.ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 强制文本换行
+.force-wrap {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: keep-all;
 }

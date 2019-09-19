@@ -11,28 +11,22 @@
 .oh {
   overflow: hidden;
 }
-.pointer(@color:@primary) {
+.pointer {
   cursor: pointer;
-  &:hover {
-    color: @color;
-  }
 }
+
 .debug {
   // 调试用-高亮样式
   background: @volcano;
   border: 1px solid @red;
   color: @white;
 }
-.box-shadow {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-}
 
-.padding(@size:1em) {
-  padding: @size;
-}
-.margin(@size:1em) {
-  margin: @size;
-}
-.marginBottom(@size:1em) {
-  margin-bottom: @size;
+.defaultImage(@size:300px,@size2:@size/1.5) {
+  @img :"https://dummyimage.com/300x200/&text=img";
+  width: @size;
+  height: @size2;
+  background-image: url(@img);
+  background-position: center;
+  background-size: cover;
 }
